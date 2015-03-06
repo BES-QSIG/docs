@@ -1,5 +1,7 @@
 ---
 layout: doc
+status: complete
+author: [Dom Bennett]
 title: Introduction to Markdown
 permalink: /docs/introduction_to_markdown/
 ---
@@ -12,11 +14,13 @@ hosting on this website. To see the raw text version click [here][raw].
 ## Metadata
 At the very top of every document metadata is provided to tell the website how
 the page should be set-up, it's called _front-matter_. Don't worry about how
-it works, all that is required is to provide layout, title and link
-parameters. So for this document the parameters are:
+it works, all that is required is to provide layout, status, author, title and
+link parameters. So for this document the parameters are:
 
     ---
     layout: doc
+    status: complete
+    author: [Dom Bennett]
     title: Introduction to Markdown
     permalink: /docs/introduction_to_markdown/
     ---

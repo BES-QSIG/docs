@@ -8,8 +8,8 @@ permalink: /docs/introduction_to_markdown/
 
 # Introduction to Markdown
 
-This is an example document demonstrating how to create Markdown documents for
-hosting on this website. To see the raw text version click [here][raw].
+*This tutorial explains the Markdown syntax for tutorials hosted on this
+website. To see the raw text version click [here][raw].*
 
 ## Metadata
 At the very top of every document metadata is provided to tell the website how
@@ -26,9 +26,12 @@ link parameters. So for this document the parameters are:
     ---
 
 Simply copy this and place it at the top of any document you create. The title
-specifies the name of the page that will appear in users' browsers. The link
-is always `/docs/[name_of_file]`, with the name of the file ignoring the
-extension.
+specifies the name of the page that will appear in users' browsers. The
+permalink is always `/docs/[name_of_file]`, with the name of the file ignoring
+the extension. Currently status can either be 'incomplete' or 'complete'.
+Also, remember to add your name to the author list if you have contributed
+substantially to any document you edit, e.g. `[John Smith,Mary Jane]`.
+(In the future this will be automatically generated from the git history.)
 
 ## Headings
 
@@ -79,23 +82,27 @@ To add URL links use this syntax:
 
     [hyperlinked text](url/to/link)
 
+To link between different documents on the website use the `site.baseurl`
+command:
+
+    [hyperlinked text]({{ "{{ site.baseurl " }}}}/docs/name_of_page.md)
+
 To add images, the syntax is very similar:
 
     ![name_of_image](url/link/to/image "Hover description of image")
 
 Instead of linking to images elsewhere on the internet, you can link to images
 uploaded to the BES-QSIG's docs repo. All images are kept in the `img/` folder.
-These images are available via this URL:
+Instead of providing a URL, you can use this command:
 
-    https://raw.githubusercontent.com/BES-QSIG/Guides/docs/img/
+    {{ "{{ site.imgurl " }}}}/name_of_file
 
 To make your life easier, it's best to create references to images rather than
 have chunks of URL in the middle of your text. For example, at the bottom of
 this .md file I've created a reference to an image of my cat like so:
 
     <!-- References -->
-    [cat]: https://raw.githubusercontent.com/BES-QSIG/Guides/docs/img/mara_cat.jpg
-    "This is my cat, she's called Mara."
+    [cat]: {{ "{{ site.imgurl " }}}}/mara_cat.jpg "This is my cat, she's called Mara."
 
 Note `<!--` and `-->` indicate the start and end of comments. To use this
 reference in the text I type:
@@ -179,5 +186,5 @@ Here are some useful references:
 * [GitHub Markdown Syntax](https://help.github.com/articles/github-flavored-markdown/)
 
 <!-- References -->
-[raw]: https://raw.githubusercontent.com/BES-QSIG/Test-guides/docs/example_document.md
-[cat]: https://raw.githubusercontent.com/BES-QSIG/test/docs/img/mara_cat.jpg "This is my cat, she's called Mara."
+[raw]: https://raw.githubusercontent.com/BES-QSIG/docs/master/introduction_to_markdown.md
+[cat]: {{ site.imgurl }}/mara_cat.jpg "This is my cat, she's called Mara."

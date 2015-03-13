@@ -1,11 +1,11 @@
 ---
 layout: doc
 status: incomplete
-author: [Dom Bennett]
+author: []
 title: Github basics
 permalink: /docs/github_basics/
 ---
 
 # Github basics
 
-Whoops.... no one's written this yet!
+Whoops.... no one's written this yet! Maybe you could?

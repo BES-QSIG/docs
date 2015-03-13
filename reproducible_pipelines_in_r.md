@@ -1,11 +1,11 @@
 ---
 layout: doc
 status: incomplete
-author: [Dom Bennett]
+author: []
 title: Reproducible pipelines in R
 permalink: /docs/reproducible_pipelines_in_r/
 ---
 
 # Reproducible pipelines in R
 
-Whoops.... no one's written this yet!
+Whoops.... no one's written this yet! Maybe you could?

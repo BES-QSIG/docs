@@ -1,11 +1,11 @@
 ---
 layout: doc
 status: incomplete
-author: [Dom Bennett]
+author: []
 title: Git advanced
 permalink: /docs/git_advanced/
 ---
 
 # Git advanced
 
-Whoops.... no one's written this yet!
+Whoops.... no one's written this yet! Maybe you could?

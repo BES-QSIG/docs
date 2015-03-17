@@ -8,4 +8,4 @@ permalink: /docs/how_to_build_an_r_package/
 
 # How to build an R package
 
-This is a test: this post is currently editing by Simon D.
+This is a test: this post is currently editing by Simon.

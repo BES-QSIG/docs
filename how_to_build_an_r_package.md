@@ -37,7 +37,7 @@ Before this step, the documentation file of the package (the "DESCRIPTION" file 
 Once all the description and documentation files have been completed, open a terminal window and `cd` to your `R` working directory containing your package folder. In the terminal, then enter the following command to check the package:
 
 ```
-R CMD check name_of_your_package
+> R CMD check name_of_your_package
 ```
 
 In addition to check you package, this will generate a new folder called "name_of_your_package.Rcheck" that will contain a pdf manual automatically generated and based on your description and documentation files.
@@ -46,7 +46,7 @@ In addition to check you package, this will generate a new folder called "name_o
 The last step after checking is to build your package package. In your terminal window enter the following command to build the package:
 
 ```
-R CMD build name_of_your_package
+> R CMD build name_of_your_package
 ```
 
 This will generate the archive file of your package. To check your compiled package in `R`, you can directly install it from this source file using the command:

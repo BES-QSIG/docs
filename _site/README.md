@@ -1,2 +1,0 @@
-# docs
-All CGE docs

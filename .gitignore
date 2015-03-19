@@ -1,0 +1,5 @@
+# Hidden files
+.DS_Store
+
+# Reserved folders
+_site/

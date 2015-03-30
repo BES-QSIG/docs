@@ -11,7 +11,7 @@ permalink: /docs/how_to_build_an_r_package/
 Building a `R` package is quite easy but the writing of help files related to each function requires basic knowledges of Latex (although the language used to write R documentation files is a little bit different from the official Latex language).
 This tutorial is a short version. For a more detailed tutorial, see this [pdf file](http://cran.r-project.org/doc/contrib/Leisch-CreatingPackages.pdf).
 
-Building a `R` package can be performed in four steps:
+Building a `R` package can be performed in 4 steps:
 
 ### Step 1
 In R: load the different functions of the future package as follows:

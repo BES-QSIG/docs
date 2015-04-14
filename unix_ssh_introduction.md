@@ -1,3 +1,12 @@
+---
+layout: doc
+status: complete
+author: [Will Pearse]
+title: UNIX (and SSH) introduction
+permalink: /docs/unix_ssh_intro/
+---
+
+
 Preamble
 ========
 
@@ -222,21 +231,21 @@ with?
 Useful BASH commands and tricks
 ===============================
 
-  **Command**     **Description**
-  --------------- ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-  `top`           Lists all the processes (programs) running on the computer, and how much of the processor is being used. `htop` is a much more friendly graphical version of `top`; if it’s installed on your system use it. You can also stop programs here, a bit like control-alt-delete on a windows computer.
-  `make`          Used to compile a lot of programs; typically just typing `make` in the directory that contains the source code of a C/C++ or Fortan program will be sufficient. The name comes from the fact it looks for a *makefile* that describes how to compile the program you want to use. Try `make -f name.of.makefile` if that doesn’t work, there’s often more than one Makefile and you need to pick which version of the program you want to compile.
-  `wget`          *Get* something from the *Web*; use it to download programs etc.
-  `tar`           Used to create ‘tar-balls’ (zip files); `tar -xf file.tar.gz` will unzip something, `tar -cf new.tar folder another.file` will create a new .tar from the folder(s) and file(s) you specify. `unzip` does the same thing but for zip file.
-  `rm`            You can delete a whole folder and everything in it by running `rm` *recursively* and *forcing* it to delete things, *e.g.*, `rm -rf folder`. Many, many people have deleted more than they bargained using this tool.
-  `cp`            You can *recursively* copy a directory, *e.g.*, `cp -r folder`.
-  `Rscript`       Runs an R script; useful in conjunction with `nohup` and friends (see above).
-  `apt-get`       Used on many Linux computers (notably Debain and Ubuntu) to install programs; you will almost certainly need to have `sudo` access to do this.
-  `sudo`          *Super user do*; allows administrators to authenticate before doing anything potentially dangerous to the system. If it’s your own computer, you will be able to use this command. For the love of God be careful with it!
-  `tab`           Hit the tab-key when part-way through a command or file-name and BASH will try to complete it for you. If there is more than one potential match, keep hitting it and it will show all the possible completions.
-  `*`             You can list, copy, and delete based on wild-card matching. For example, `ls *.txt` will show you all the text files in a directory, and `rm first.try*` will remove files starting with the phrase ‘first try’. Many, many people have done more than they bargained using this tool.
-  `|`             Pipes are one of the most powerful features of BASH. You can use them to chain commands together; for instance `ls -l | wc -l` will print out all the files in your directory (one per line; `ls -l`), and `|` takes that information and passes it to `wc -l` that counts the number of lines in its input. Voilá; you now know how many files are in the directory. Doing operations using `|` can result in orders of magnitude increase in execution speed; writing to disk is slow.
-  `who`/`write`   To send a message to someone logged in, find them with `who` and note their terminal (second column). Send them a message with `write username terminal`, hit enter, type your message, then control-D (end-of-line).
-  `R env`         Set the default *R* library by making a file called `.Renviron` containing the line `R_LIBS=/home/share/R/` (...or wherever else...)
+|**Command** | **Description** |
+|  --------------- | ----------------------------------------------------------------------- |
+|  `top` | Lists all the processes (programs) running on the computer, and how much of the processor is being used. `htop` is a much more friendly graphical version of `top`; if it’s installed on your system use it. You can also stop programs here, a bit like control-alt-delete on a windows computer. |
+| `make` | Used to compile a lot of programs; typically just typing `make` in the directory that contains the source code of a C/C++ or Fortan program will be sufficient. The name comes from the fact it looks for a *makefile* that describes how to compile the program you want to use. Try `make -f name.of.makefile` if that doesn’t work, there’s often more than one Makefile and you need to pick which version of the program you want to compile.
+| `wget` |  *Get* something from the *Web*; use it to download programs etc.
+|  `tar` | Used to create ‘tar-balls’ (zip files); `tar -xf file.tar.gz` will unzip something, `tar -cf new.tar folder another.file` will create a new .tar from the folder(s) and file(s) you specify. `unzip` does the same thing but for zip file.
+|  `rm` | You can delete a whole folder and everything in it by running `rm` *recursively* and *forcing* it to delete things, *e.g.*, `rm -rf folder`. Many, many people have deleted more than they bargained using this tool.
+|  `cp` | You can *recursively* copy a directory, *e.g.*, `cp -r folder`.
+|  `Rscript` | Runs an R script; useful in conjunction with `nohup` and friends (see above).
+|  `apt-get` | Used on many Linux computers (notably Debain and Ubuntu) to install programs; you will almost certainly need to have `sudo` access to do this.
+|  `sudo` | *Super user do*; allows administrators to authenticate before doing anything potentially dangerous to the system. If it’s your own computer, you will be able to use this command. For the love of God be careful with it!
+|  `tab` | Hit the tab-key when part-way through a command or file-name and BASH will try to complete it for you. If there is more than one potential match, keep hitting it and it will show all the possible completions.
+|  `*` | You can list, copy, and delete based on wild-card matching. For example, `ls *.txt` will show you all the text files in a directory, and `rm first.try*` will remove files starting with the phrase ‘first try’. Many, many people have done more than they bargained using this tool.
+|  `&#124;` | Pipes are one of the most powerful features of BASH. You can use them to chain commands together; for instance `ls -l &#124; wc -l` will print out all the files in your directory (one per line; `ls -l`), and `&#124;` takes that information and passes it to `wc -l` that counts the number of lines in its input. Voilá; you now know how many files are in the directory. Doing operations using `&#124;` can result in orders of magnitude increase in execution speed; writing to disk is slow.
+| `who`/`write` | To send a message to someone logged in, find them with `who` and note their terminal (second column). Send them a message with `write username terminal`, hit enter, type your message, then control-D (end-of-line).
+| `R env` | Set the default *R* library by making a file called `.Renviron` containing the line `R_LIBS=/home/share/R/` (...or wherever else...)
 
 

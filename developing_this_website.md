@@ -3,7 +3,7 @@ layout: doc
 status: complete
 author: [Dom Bennett]
 title: Developing this website
-permalink: /docs/developing_this_website.md/
+permalink: /docs/developing_this_website/
 ---
 
 # Developing this website

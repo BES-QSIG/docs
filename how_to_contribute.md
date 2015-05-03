@@ -1,12 +1,10 @@
 ---
 layout: doc
 status: complete
-author: [Dom Bennett]
 title: How to contribute
+theme: guides
 permalink: /docs/how_to_contribute/
 ---
-
-# How to contribute
 
 _You will need a GitHub account, if you do not already have one click
 [here](https://github.com/) to sign up._

@@ -1,12 +1,10 @@
 ---
 layout: doc
 status: complete
-author: [Dom Bennett]
 title: Developing this website
+theme: guides
 permalink: /docs/developing_this_website/
 ---
-
-# Developing this website
 
 Here we will describe how to download, update and upload changes for this
 website. (Note, here we describe the website for `test-cge`, in the future this

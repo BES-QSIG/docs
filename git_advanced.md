@@ -1,11 +1,9 @@
 ---
 layout: doc
 status: incomplete
-author: []
 title: Git advanced
+theme: git
 permalink: /docs/git_advanced/
 ---
-
-# Git advanced
 
 Whoops.... no one's written this yet! Maybe you could?

@@ -1,11 +1,9 @@
 ---
 layout: doc
 status: incomplete
-author: []
 title: Platform structure
+theme: guides
 permalink: /docs/platform_structure/
 ---
-
-# Platform structure
 
 Whoops.... no one's written this yet! Maybe you could?

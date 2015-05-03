@@ -1,11 +1,9 @@
 ---
 layout: doc
 status: incomplete
-author: []
-title: Github basics
+title: GitHub basics
+theme: git
 permalink: /docs/github_basics/
 ---
-
-# Github basics
 
 Whoops.... no one's written this yet! Maybe you could?

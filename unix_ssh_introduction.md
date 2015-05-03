@@ -1,8 +1,8 @@
 ---
 layout: doc
 status: complete
-author: [Will Pearse]
 title: UNIX (and SSH) introduction
+theme: UNIX
 permalink: /docs/unix_ssh_intro/
 ---
 
@@ -247,5 +247,3 @@ Useful BASH commands and tricks
 |  `&#124;` | Pipes are one of the most powerful features of BASH. You can use them to chain commands together; for instance `ls -l &#124; wc -l` will print out all the files in your directory (one per line; `ls -l`), and `&#124;` takes that information and passes it to `wc -l` that counts the number of lines in its input. Voilá; you now know how many files are in the directory. Doing operations using `&#124;` can result in orders of magnitude increase in execution speed; writing to disk is slow.
 | `who`/`write` | To send a message to someone logged in, find them with `who` and note their terminal (second column). Send them a message with `write username terminal`, hit enter, type your message, then control-D (end-of-line).
 | `R env` | Set the default *R* library by making a file called `.Renviron` containing the line `R_LIBS=/home/share/R/` (...or wherever else...)
-
-

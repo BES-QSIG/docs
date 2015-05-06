@@ -2,7 +2,7 @@
 layout: doc
 status: complete
 title: UNIX (and SSH) introduction
-theme: UNIX
+theme: unix
 permalink: /docs/unix_ssh_intro/
 ---
 

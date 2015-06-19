@@ -110,10 +110,8 @@ git push
 There are two steps to building the hostable website in `_site/`. `build.py`
 is a custom python script updates guides' front-matter using the git repo to
 get authors and last date since update. It places updated docs in `_docs/`
-which is what Jekyll looks for when building the wesbite.
-
-`jekyll build` then constructs the hostable website from using the layout
-information, css objects etc.
+which is what Jekyll looks for when building the wesbite. `jekyll build` then
+constructs the hostable website from the layout information, css objects etc.
 
 It is useful to double check the look and functionality of the website
 with `jekyll serve` before pushing to GitHub.

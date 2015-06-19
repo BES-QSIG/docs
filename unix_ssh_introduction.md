@@ -3,7 +3,7 @@ layout: doc
 status: complete
 title: UNIX (and SSH) introduction
 theme: unix
-permalink: /docs/unix_ssh_intro/
+permalink: /docs/unix_ssh_introduction/
 ---
 
 

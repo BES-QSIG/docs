@@ -6,30 +6,37 @@ theme: guides
 permalink: /docs/introduction_to_markdown/
 ---
 
-*This tutorial explains the Markdown syntax for tutorials hosted on this
-website. To see the raw text version click [here][raw].*
+This tutorial explains the Markdown syntax for tutorials hosted on this
+website. Although, Markdown comes in a variety of flavours -- most ecologists
+would be familiar with R markdown -- they all have very similar syntaxes with
+many of it being interchangeable. On this website we use GitHub flavoured
+markdown.
+
+## Extension
+
+Always save your markdown files: `[name_file].md`
 
 ## Metadata
+
 At the very top of every document metadata is provided to tell the website how
 the page should be set-up, it's called _front-matter_. Don't worry about how
-it works, all that is required is to provide layout, status, author, title and
+it works, all that is required is to provide layout, status, title and
 link parameters. So for this document the parameters are:
 
     ---
     layout: doc
     status: complete
-    author: [Dom Bennett]
     title: Introduction to Markdown
     permalink: /docs/introduction_to_markdown/
     ---
 
-Simply copy this and place it at the top of any document you create. The title
-specifies the name of the page that will appear in users' browsers. The
-permalink is always `/docs/[name_of_file]`, with the name of the file ignoring
-the extension. Currently status can either be 'incomplete' or 'complete'.
-Also, remember to add your name to the author list if you have contributed
-substantially to any document you edit, e.g. `[John Smith,Mary Jane]`.
-(In the future this will be automatically generated from the git history.)
+Simply copy this and place it at the top of any document you create. `layout`
+must always be doc, it tells the website how to parse the file. `title`
+specifies the name of the page that will appear in users' browsers.
+`permalink` is always `/docs/[name_of_file]`, with the name of the file ignoring
+the extension. `status` is a free text field, you could write things
+like 'in development' or 'complete' to let your readers know how likely the
+guide is to change or whether you're looking for help.
 
 ## Headings
 
@@ -56,6 +63,16 @@ Words words words ....
 ### Subheading 2
 Words words words ....
 
+## Asides
+
+Use the \> symbol to make text into an aside. For example:
+
+  `>Hello! I'm being self-referential!`
+
+.... produces:
+
+>Hello! I'm being self-referential!
+
 ## Lists
 
 Bullet point lists are created with `*`, numbered lists with numbers. e.g.
@@ -81,7 +98,7 @@ To add URL links use this syntax:
     [hyperlinked text](url/to/link)
 
 To link between different documents on the website use the `site.baseurl`
-command:
+command within curly brackets:
 
     [hyperlinked text]({{ "{{ site.baseurl " }}}}/docs/name_of_page.md)
 
@@ -112,17 +129,12 @@ bottom of the page. So using it gives ....
 
 ![cat][cat]
 
-_Miaow miaow_.
-
 ## Code blocks
 
-This probably the most important element for coding manuals and tutorials.
-Markdown makes these very easy to insert with language-specific syntax
-colouring.
-
-To insert code inline use \`. I use this to highlight `folders/`,
-`variables`, `functions` etc. if I refer to them in-text. To insert blocks of
-text, indent the paragraph as I have been doing above for Markdown examples, e.g.
+This is probably what gives Markdown the edge. To insert code inline use \`.
+I use this to highlight `folders/`, `variables`, `functions` etc. if I refer to
+them in-text. To insert blocks of text, indent the paragraph as I have been
+doing above for Markdown examples, e.g.
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -132,10 +144,9 @@ text, indent the paragraph as I have been doing above for Markdown examples, e.g
     occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
     anim id est laborum.
 
-We use GitHub flavoured markdown so for syntax code colouring, the code block
-is specified using three \` and the name of the language at the beginning of
-the code block and three \`  at the end. For example, this block of `R`
-code ....
+For syntax code colouring, the code block is specified using three \` and the
+name of the language at the beginning of the code block and three \`  at the
+end. For example, this block of `R` code ....
 
     ```R
     greeting <- 'Hello world!'
@@ -174,15 +185,61 @@ print(greeting)
 For a full list of available languages click
 [here](https://github.com/github/linguist/blob/master/lib/linguist/languages.yml).
 
-## Further reading
-Other features are also available for Markdown such as tables. You can also
-insert `HTML` into the Markdown file if you want to do anything complicated.
+## Tables
 
-Here are some useful references:
+You can construct tables using `|` and `-`. Use `|` to separate columns,
+new lines to separate rows and `-` to mark headers. For example:
+
+```
+|**Col1** | **Col2** |
+| ------- | -------- |
+|row1col1|row1col2|
+|row2col1|row2col2|
+```
+
+.... produces:
+
+|**Col1** | **Col2** |
+| ------- | -------- |
+|row1col1|row1col2|
+|row2col1|row2col2|
+
+## Previewing
+
+It may be useful to preview your script before uploading. You can use online
+previewers, such as:
+
+* [tmpvar's](http://tmpvar.com/markdown.html)
+* [jbt's](http://jbt.github.io/markdown-editor)
+
+Or by working with a good text editor that has GitHub markdown syntax
+highlighting and previewing:
+
+* [Atom](https://atom.io/)
+* [Sublime](http://www.sublimetext.com/)
+
+## Converters
+
+If you already have a guide written in a different markup language (such as
+  HTML, Latex or even pdf!) you can use a converter to transform it into
+markdown. See [pandocs](http://pandoc.org/README.html) for more details.
+
+## Further reading
+
+When embarking on writing a tutorial, feel free to copy the markdown of other
+files in the `docs/` repo. Click on the 'Improve page' pencil at the top to
+see the page in GitHub and click 'raw' to see the text script, unparsed.
+
+Note, however, that some tutorials may have been generated using automatic
+converters may use a different syntax to that described in this document.
+
+For more complicated features you can also use `HTML`. We can also add to the
+website `css` for any custom classes.
+
+Useful references:
 
 * [Official Markdown Syntax](http://daringfireball.net/projects/markdown/syntax)
 * [GitHub Markdown Syntax](https://help.github.com/articles/github-flavored-markdown/)
 
 <!-- References -->
-[raw]: https://raw.githubusercontent.com/BES-QSIG/docs/master/introduction_to_markdown.md
 [cat]: {{ site.imgurl }}/mara_cat.jpg "This is my cat, she's called Mara."

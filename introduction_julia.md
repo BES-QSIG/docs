@@ -2,7 +2,7 @@
 layout: doc
 status: incomplete
 title: Introduction to Julia
-theme: Introductions
+theme: introduction
 permalink: /docs/introduction_julia/
 ---
 

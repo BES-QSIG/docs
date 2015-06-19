@@ -2,7 +2,7 @@
 layout: doc
 status: incomplete
 title: Introduction to C
-theme: Introductions
+theme: introduction
 permalink: /docs/introduction_c/
 ---
 

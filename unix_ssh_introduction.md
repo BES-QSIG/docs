@@ -196,7 +196,7 @@ about how this works, just do the following:
 
 -   Get an SSH key.
 
--   * Never share your private key with anyone ever*. If you do, tell
+-   *Never share your private key with anyone ever*. If you do, tell
     everyone who uses that key to no longer trust it.
 
 -   Find your remote computer’s administrator and ask them to use your

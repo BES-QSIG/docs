@@ -1,0 +1,35 @@
+# - theme: [NAME OF THEME AS IT WILL APPEAR ON WEBSITE]
+#   docs:
+#     - [NAME OF DOCUMENT WITHOUT EXTENSION]
+- title: FGE
+  docs:
+    - introduction_to_markdown
+    - how_to_contribute
+    - developing_this_website
+    - platform_structure
+- title: Introductions
+  docs:
+    - introduction_python
+    - introduction_c
+    - introduction_julia
+- title: Git
+  docs:
+    - git_basics
+    - git_advanced
+    - github_basics
+- title: UNIX
+  docs:
+    - unix_ssh_introduction
+    - introduction_to_using_the_hpc
+- title: Reproducibility
+  docs:
+    - reproducible_pipelines_in_python
+    - reproducible_pipelines_in_r
+- title: Distribution
+  docs:
+    - how_to_build_an_r_package
+    - how_to_build_a_python_package
+    - creating_an_r_package_in_rstudio
+- title: Other
+  docs:
+    - coding_philosophy

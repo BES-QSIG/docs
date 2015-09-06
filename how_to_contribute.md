@@ -2,8 +2,6 @@
 layout: doc
 status: complete
 title: How to contribute
-theme: guides
-permalink: /docs/how_to_contribute/
 ---
 
 _You will need a GitHub account, if you do not already have one click

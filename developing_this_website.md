@@ -2,8 +2,6 @@
 layout: doc
 status: complete
 title: Developing this website
-theme: guides
-permalink: /docs/developing_this_website/
 ---
 
 Here I will describe how to download, set-up and develop the FGE website.

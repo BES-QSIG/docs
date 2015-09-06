@@ -2,8 +2,6 @@
 layout: doc
 status: complete
 title: Introduction to Markdown
-theme: guides
-permalink: /docs/introduction_to_markdown/
 ---
 
 This tutorial explains the Markdown syntax for tutorials hosted on this

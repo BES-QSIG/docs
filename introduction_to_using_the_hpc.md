@@ -1,9 +1,7 @@
 ---
 layout: doc
-status: incomplete
+status: complete
 title: Introduction to using the HPC
-theme: unix
-permalink: /docs/introduction_to_using_the_hpc/
 ---
 
 ## Introduction

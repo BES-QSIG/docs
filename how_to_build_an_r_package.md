@@ -2,8 +2,6 @@
 layout: doc
 status: first version
 title: How to build an R package
-theme: distribution
-permalink: /docs/how_to_build_an_r_package/
 ---
 
 Building a `R` package is quite easy but the writing of help files related to each function requires basic knowledges of Latex (although the language used to write R documentation files is a little bit different from the official Latex language).

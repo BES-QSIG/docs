@@ -40,12 +40,3 @@ website that has definitions.
 `define serendipity`
 
 ![google-define](https://raw.githubusercontent.com/BES-QSIG/docs/master/img/google_define.jpg "Google defines serendipity")
-
-
-
-
-`site:[URL of website you want to search] [keywords]`
-
-This was useful for finding cover photos for this website. I wanted something
-green and with leaves so I searched:
-`site:`

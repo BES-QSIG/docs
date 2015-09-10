@@ -25,14 +25,12 @@ link parameters. So for this document the parameters are:
     layout: doc
     status: complete
     title: Introduction to Markdown
-    permalink: /docs/introduction_to_markdown/
     ---
 
 Simply copy this and place it at the top of any document you create. `layout`
 must always be doc, it tells the website how to parse the file. `title`
 specifies the name of the page that will appear in users' browsers.
-`permalink` is always `/docs/[name_of_file]`, with the name of the file ignoring
-the extension. `status` is a free text field, you could write things
+`status` is a free text field, you could write things
 like 'in development' or 'complete' to let your readers know how likely the
 guide is to change or whether you're looking for help.
 

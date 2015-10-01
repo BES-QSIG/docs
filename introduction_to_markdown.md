@@ -4,22 +4,28 @@ status: complete
 title: Introduction to Markdown
 ---
 
-This tutorial explains the Markdown syntax for tutorials hosted on this
-website. Although, Markdown comes in a variety of flavours -- most ecologists
-would be familiar with R markdown -- they all have very similar syntaxes with
-many of it being interchangeable. On this website we use GitHub flavoured
-markdown.
+# Introduction to Markdown
 
-## Extension
+Markdown is a [markup language](https://en.wikipedia.org/wiki/Markup_language)
+like HTML or LATEX. It is a text document that specifies not only the text but also the format. Markdown is designed to be as simple as
+possible.
 
-Always save your markdown files: `[name_file].md`
+Markdown documents can be made and edited with basic text editors (e.g.
+notepad, wordpad, textedit) or online with GitHub.
 
-## Metadata
+For this website we use a version of Markdown called GitHub Flavoured Markdown.
 
-At the very top of every document metadata is provided to tell the website how
-the page should be set-up, it's called _front-matter_. Don't worry about how
-it works, all that is required is to provide layout, status, title and
-link parameters. So for this document the parameters are:
+## Contents
+
+1. Formatting your document
+2. Markdown features
+3. Advanced and further reading
+
+# Formatting your document
+
+Please save your documents with the .md extension e.g. `[name_file].md`
+
+Please provide front matter at the top of the document:
 
     ---
     layout: doc
@@ -27,47 +33,39 @@ link parameters. So for this document the parameters are:
     title: Introduction to Markdown
     ---
 
-Simply copy this and place it at the top of any document you create. `layout`
-must always be doc, it tells the website how to parse the file. `title`
-specifies the name of the page that will appear in users' browsers.
-`status` is a free text field, you could write things
-like 'in development' or 'complete' to let your readers know how likely the
-guide is to change or whether you're looking for help.
+This tells the website how to interpret the document.
+
+* `layout`: type of document (always doc)
+* `status`: e.g. complete, incomplete, in progress (free text)
+* `title`: Introduction to ..., How to .... (free text)
+
+
+# Markdown features
+
+## Emphasis
+
+Use \* and \*\* to italicise and embolden text, e.g.
+
+    `*I am italicised* while **I am emboldened**`
+
+Produces:
+
+*I am italicised* while **I am emboldened**
 
 ## Headings
 
-Headings in Markdown are denoted using `#` symbol, subheadings are specified by
-adding an extra `#`. So for example, this Markdown code:
+Use the `#` to create headings. Each subheading is specified with an additional
+`#`. e.g.
 
-    # Heading 1
-    Words words words ....
+    ### Subheading 3
 
-    ## Subheading 1
-    Words words words ....
+    #### Subheading 4
 
-    ### Subheading 2
-    Words words words ....
+Produces:
 
-Produces this:
+### Subheading 3
 
-# Heading 1
-Words words words ....
-
-## Subheading 1
-Words words words ....
-
-### Subheading 2
-Words words words ....
-
-## Asides
-
-Use the \> symbol to make text into an aside. For example:
-
-  `>Hello! I'm being self-referential!`
-
-.... produces:
-
->Hello! I'm being self-referential!
+#### Subheading 4
 
 ## Lists
 
@@ -75,6 +73,7 @@ Bullet point lists are created with `*`, numbered lists with numbers. e.g.
 
     * item 1
     * item 2
+
 
     1. item 1
     2. item 2
@@ -84,65 +83,49 @@ Produces:
 * item 1
 * item 2
 
+
 1. item 1
 2. item 2
 
 ## References
 
-To add URL links use this syntax:
+To add URL links use this syntax `[hyperlinked text](url/to/link)` e.g.
 
-    [hyperlinked text](url/to/link)
+    *Louis XIV, also known as the Sun King, was king of France from 1643 to
+    1715 according to his [Wikipedia page](https://en.wikipedia.org/wiki/Louis_XIV_of_France)*
 
-To link between different documents on the website use the `site.baseurl`
-command within curly brackets:
+Produces:
 
-    [hyperlinked text]({{ "{{ site.baseurl " }}}}/docs/name_of_page.md)
+*Louis XIV, also known as the Sun King, was king of France from 1643 to
+1715 according to his [Wikipedia page](https://en.wikipedia.org/wiki/Louis_XIV_of_France)*
 
-To add images, the syntax is very similar:
+## Images
 
-    ![name_of_image](url/link/to/image "Hover description of image")
+To add images, the syntax is very similar `![name_of_image](url/link/to/image "Hover description of image")`.
+e.g.
 
-Instead of linking to images elsewhere on the internet, you can link to images
-uploaded to the BES-QSIG's docs repo. All images are kept in the `img/` folder.
-Instead of providing a URL, you can use this command:
+    `![cat](https://raw.githubusercontent.com/BES-QSIG/docs/master/img/mara_cat.jpg "This cat is called Mara")`
 
-    {{ "{{ site.imgurl " }}}}/name_of_file
+Produces:
 
-To make your life easier, it's best to create references to images rather than
-have chunks of URL in the middle of your text. For example, at the bottom of
-this .md file I've created a reference to an image of my cat like so:
+![cat](https://raw.githubusercontent.com/BES-QSIG/docs/master/img/mara_cat.jpg "This cat is called Mara")
 
-    <!-- References -->
-    [cat]: {{ "{{ site.imgurl " }}}}/mara_cat.jpg "This is my cat, she's called Mara."
 
-Note `<!--` and `-->` indicate the start and end of comments. To use this
-reference in the text I type:
+## Code snippets
 
-    ![cat][cat]
+To insert code inline use \` e.g.
 
-Where the second `[cat]` is the named reference to the URL link I provide at the
-bottom of the page. So using it gives ....
+  ```
+  This is text and `this is code`
+  ```
 
-![cat][cat]
+Produces:
+
+This is text and `this is code`
 
 ## Code blocks
 
-This is probably what gives Markdown the edge. To insert code inline use \`.
-I use this to highlight `folders/`, `variables`, `functions` etc. if I refer to
-them in-text. To insert blocks of text, indent the paragraph as I have been
-doing above for Markdown examples, e.g.
-
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-    anim id est laborum.
-
-For syntax code colouring, the code block is specified using three \` and the
-name of the language at the beginning of the code block and three \`  at the
-end. For example, this block of `R` code ....
+Use \`\`\` to create syntax highlighted code blocks e.g.
 
     ```R
     greeting <- 'Hello world!'
@@ -152,7 +135,7 @@ end. For example, this block of `R` code ....
     cat (greeting)
     ```
 
-.... produces:
+Produces:
 
 ```R
 greeting <- 'Hello world!'
@@ -162,7 +145,7 @@ for (letter in greeting) {
 cat (greeting)
 ```
 
-Other languages are also possible, such as for `python`:
+Other languages are also possible e.g.
 
     ```python
     greeting = 'Hello world!'
@@ -193,12 +176,24 @@ new lines to separate rows and `-` to mark headers. For example:
 |row2col1|row2col2|
 ```
 
-.... produces:
+Produces:
 
 |**Col1** | **Col2** |
 | ------- | -------- |
 |row1col1|row1col2|
 |row2col1|row2col2|
+
+## Asides
+
+Use the \> symbol to make text into an aside e.g.
+
+  `>Hello! Hello! Hello!`
+
+Produces:
+
+>Hello! Hello! Hello!
+
+# Advanced and further reading
 
 ## Previewing
 
@@ -217,12 +212,12 @@ highlighting and previewing:
 ## Converters
 
 If you already have a guide written in a different markup language (such as
-  HTML, Latex or even pdf!) you can use a converter to transform it into
+  HTML, Latex or even pdf) you can use a converter to transform it into
 markdown. See [pandocs](http://pandoc.org/README.html) for more details.
 
 ## Further reading
 
-When embarking on writing a tutorial, feel free to copy the markdown of other
+When writing a tutorial, feel free to copy the markdown of other
 files in the `docs/` repo. Click on the 'Improve page' pencil at the top to
 see the page in GitHub and click 'raw' to see the text script, unparsed.
 
@@ -236,6 +231,3 @@ Useful references:
 
 * [Official Markdown Syntax](http://daringfireball.net/projects/markdown/syntax)
 * [GitHub Markdown Syntax](https://help.github.com/articles/github-flavored-markdown/)
-
-<!-- References -->
-[cat]: {{ site.imgurl }}/mara_cat.jpg "This is my cat, she's called Mara."

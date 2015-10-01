@@ -4,6 +4,10 @@ status: complete
 title: How to contribute
 ---
 
+# New title
+
+This is the test I've added.
+
 # How to contribute
 
 _You will need a GitHub account, if you do not already have one click

@@ -46,7 +46,9 @@ This tells the website how to interpret the document.
 
 Use \* and \*\* to italicise and embolden text, e.g.
 
-    `*I am italicised* while **I am emboldened**`
+```
+*I am italicised* while **I am emboldened**
+```
 
 Produces:
 
@@ -104,7 +106,7 @@ Produces:
 To add images, the syntax is very similar `![name_of_image](url/link/to/image "Hover description of image")`.
 e.g.
 
-    `![cat](https://raw.githubusercontent.com/BES-QSIG/docs/master/img/mara_cat.jpg "This cat is called Mara")`
+    ![cat](https://raw.githubusercontent.com/BES-QSIG/docs/master/img/mara_cat.jpg "This cat is called Mara")
 
 Produces:
 

@@ -17,9 +17,9 @@ For this website we use a version of Markdown called GitHub Flavoured Markdown.
 
 ## Contents
 
-1. Formatting your document
-2. Markdown features
-3. Advanced and further reading
+1. [Formatting your document](#formatting-your-document)
+2. [Markdown features](#markdown-features)
+3. [Advanced and further reading](#advanced-and-further-reading)
 
 # Formatting your document
 

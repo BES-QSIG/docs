@@ -4,25 +4,71 @@ status: complete
 title: How to contribute
 ---
 
+# Contents
+
+* [How to contribute](#how-to-contribute)
+* [Online editing](#online-editing)
+* [Doc-Keepers](#doc-keepers)
+
 # How to contribute
 
-The FGE website depends on GitHub, to contribute you will need an account. If
-you don't have one, click [here](https://github.com/) to sign up.
+To contribute to the FGE website you will need the following:
 
-You can then make changes to the BES-QSIG docs repo, found [here][docs-repo].
+* A GitHub account (click [here](https://github.com/) to sign up)
+* A knowledge of Markdown for creating the documents (see this
+  [page](http://bes-qsig.github.io/fge/docs/introduction_to_markdown/) for a
+  simple guide)
 
-If you are not familiar with GitHub, then below are walkthroughs (online and offline) of how to make
-changes to existing documents and create new documents in the `docs/` repository.
+All documents hosted on this website are held in the [docs repository](https://github.com/BES-QSIG/docs/)
+as part of the British Ecological Society's Quantitative Ecology Special
+Interest Group (BES-QSIG) GitHub organisation. In order to edit or add documents
+you must first fork this repository. If you are not familiar with GitHub, then
+below is a walkthrough of how to edit the documents hosted on the FGE website
+through GitHub's website -- 'Online editing'.
 
-You will need to be familiar with Markdown. See this [guide](http://bes-qsig.github.io/fge/docs/introduction_to_markdown/) for a quick tutorial.
+All documents provided must be in Markdown script. Please save your documents
+with the .md extension e.g. `[name_file].md`. At the top of every document
+please provide this 'front matter':
 
-## Contents
+    ---
+    layout: doc
+    status: complete
+    title: How to contribute
+    ---
 
-1. [Online editing](#Online-editing)
-2. [Offline editing](#offline-editing)
-3. [Doc-Keepers](#doc-keepers)
+Front matter tells the website how to interpret the document.
+
+* `layout`: type of document (always doc)
+* `status`: e.g. complete, incomplete, in progress (free text)
+* `title`: Introduction to ..., How to .... (free text)
+
+If you have created a new document please also update the [`index.yml`](https://github.com/BES-QSIG/docs/blob/master/index.yml).
+This tells the website where to index the new document. It groups related documents
+under different themes. For example, at the top of the index is:
+
+```
+- title: FGE
+  docs:
+    - introduction_to_markdown
+    - how_to_contribute
+    - developing_this_website
+```
+
+This places introduction_to_markdown, how_to_contribute and developing_this_website
+into the theme titled FGE. Please add new titles following the syntax above if
+a new document does not fit into any existing themes.
 
 # Online editing
+
+GitHub is an online database of git repositories. These can be thought of as
+folders where every file or folder contains a history of every change ever made
+to it. The walkthrough below will describe how you can make changes to the BES-QSIG
+docs repository. It covers three GitHub concepts:
+
+* Forking
+* Editing online with GitHub
+* Pull requests
+
 
 ## Forking
 
@@ -70,11 +116,11 @@ This will take you to a new editing screen where you write your markdown and pre
 
 ![creating-files](https://raw.githubusercontent.com/BES-QSIG/docs/master/img/creating-files.png "Creating file")
 
-Please make you use the .md file extension and include front matter as described in the [introduction to markdown guide](http://bes-qsig.github.io/fge/docs/introduction_to_markdown/).
+Please make sure you use the .md file extension and include front matter as described above.
 
 ## Creating a pull request
 
-Navigating to the main page of our copy of the docs repository we can see how many commits ahead our copy of the repository (called a branch) is compared to the original.
+Navigating to the main page of your copy of the docs repository will show how many commits ahead your copy of the repository (called a branch) is compared to the original.
 In this example, it is 1 commit ahead of the BES-QSIG:master. You can have as many commits as you wish, including changes and new files.
 
 ![pull-request-1](https://raw.githubusercontent.com/BES-QSIG/docs/master/img/pull-request-1.png "Pull request 1")
@@ -88,31 +134,16 @@ A 'pull request' is used to merge two branches, "please could you pull my branch
 ![create-pull-request](https://raw.githubusercontent.com/BES-QSIG/docs/master/img/create-pull-request.png "Opening a pull request")
 
 Clicking 'create pull request' will inform the maintainers of
-the docs repository that someone wishes to make a change. This is done by creating a page where maintainers can view your changes and discuss them with you. (These pages are known as 'issues'.)
+the docs repository that someone wishes to make a change. This is done by creating a page where maintainers can view your changes and discuss them with you.
 
 ![opened-pull-request](https://raw.githubusercontent.com/BES-QSIG/docs/master/img/opened-pull-request.png "An open pull request")
 
 If the maintainer is happy with the changes in your branch, they will merge your branch and the original and your changes will be incorporated into the FGE website within a few days.
 
-# Offline editing
+# Doc-Keepers
 
-For more freedom, it's best to clone the docs repo to your local computer:
+To edit files on the repo without the need for forking or pull requests you will need to
+join the doc-keepers' team in the [BES-QSIG GitHub organisation](https://github.com/BES-QSIG). If you join this team you will have write access to the docs repository and can add or edit documents directly.
 
-1. Fork the docs repo to your own GitHub account.
-2. Clone the repo to your local machine: `git clone https://github.com/username/docs.git`
-3. On your computer you can edit the files, add new files including image files.
-4. Commit and push your changes to your version on your Github account.
-5. Merge your changes by making a pull request as described in the online editing above
-
-# Docs-Keepers
-
-To edit files on the repo without the need for pull requests you will need to
-join the docs-keepers' team in the [BES-QSIG GitHub account](https://github.com/BES-QSIG).
-
-If you would like to contribute a lot and join the team, please email:
-dominic.john.bennett@gmail.com.
-
-All welcome.
-
-<!-- References -->
-[docs-repo]: https://github.com/BES-QSIG/docs/
+If you would like to join the team, please email:
+dominic.john.bennett@gmail.com

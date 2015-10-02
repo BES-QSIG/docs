@@ -15,31 +15,6 @@ notepad, wordpad, textedit) or online with GitHub.
 
 For this website we use a version of Markdown called GitHub Flavoured Markdown.
 
-## Contents
-
-1. [Formatting your document](#formatting-your-document)
-2. [Markdown features](#markdown-features)
-3. [Advanced and further reading](#advanced-and-further-reading)
-
-# Formatting your document
-
-Please save your documents with the .md extension e.g. `[name_file].md`
-
-Please provide front matter at the top of the document:
-
-    ---
-    layout: doc
-    status: complete
-    title: Introduction to Markdown
-    ---
-
-This tells the website how to interpret the document.
-
-* `layout`: type of document (always doc)
-* `status`: e.g. complete, incomplete, in progress (free text)
-* `title`: Introduction to ..., How to .... (free text)
-
-
 # Markdown features
 
 ## Emphasis

@@ -30,6 +30,9 @@
     - how_to_build_an_r_package
     - how_to_build_a_python_package
     - creating_an_r_package_in_rstudio
+- title: Bayesian
+  docs:
+    - IntroWinBUGSwithR
 - title: Other
   docs:
     - google_search_tricks

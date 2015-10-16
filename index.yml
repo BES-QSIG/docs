@@ -13,6 +13,7 @@
     - introduction_julia
 - title: Git
   docs:
+    - introduction_to_versioncontrol
     - git_basics
     - git_advanced
     - github_basics

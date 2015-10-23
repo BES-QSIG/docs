@@ -34,6 +34,9 @@
 - title: Bayesian
   docs:
     - IntroWinBUGSwithR
+- title: Problems and solutions
+  docs:
+    - problems_and_solutions_r
 - title: Other
   docs:
     - google_search_tricks

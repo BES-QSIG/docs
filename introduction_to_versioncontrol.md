@@ -1,6 +1,6 @@
 ---
 layout: doc
-status: incomplete
+status: complete
 title: Introduction to Version Control
 source: http://fdschneider.github.io/blog/2013/version_control/
 source_author: Florian D. Schneider

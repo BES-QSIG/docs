@@ -1,6 +1,5 @@
 ---
-layout: doc
-status: incomplete
+status: Started
 title: How to build a Python package
 ---
 

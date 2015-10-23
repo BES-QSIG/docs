@@ -1,6 +1,5 @@
 ---
-layout: doc
-status: incomplete
+status: Not started
 title: Git advanced
 ---
 

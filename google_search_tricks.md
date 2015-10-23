@@ -1,6 +1,5 @@
 ---
-layout: doc
-status: complete
+status: Started
 title: Google search tricks
 ---
 

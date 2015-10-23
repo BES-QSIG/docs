@@ -1,5 +1,4 @@
 ---
-layout: doc
 status: complete
 title: Introduction to using the HPC
 ---

@@ -1,5 +1,4 @@
 ---
-layout: doc
 status: complete
 title: Developing this website
 ---

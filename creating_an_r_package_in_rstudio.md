@@ -1,6 +1,5 @@
 ---
-layout: doc
-status: complete
+status: Not started
 title: Creating an R package in RStudio
 ---
 

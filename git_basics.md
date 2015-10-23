@@ -1,6 +1,6 @@
 ---
 layout: doc
-status: incomplete
+status: complete
 title: Git basics
 source: http://fdschneider.github.io/blog/2014/git_for_scientists/
 source_author: Florian D. Schneider

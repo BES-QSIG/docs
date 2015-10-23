@@ -47,7 +47,7 @@ all (row.element %in% letters.df[1,])  # FALSE!
 
 How should I resolve this? Printing `letters.df[1,]` returns this:
 
-```
+```console
 > letters.df[1,]
   c1 c2 c3 c4 c5
 1  a  b  c  d  e
@@ -61,7 +61,7 @@ all (row.element %in% as.character (as.vector (letters.df[1, ])))  # FALSE
 
 No, because this has simply converted the vector into a vector of 1s.
 
-```
+```console
 > as.character (as.vector (letters.df[1, ]))
 [1] "1" "1" "1" "1" "1"
 ```

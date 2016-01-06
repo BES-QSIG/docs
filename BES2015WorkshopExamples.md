@@ -15,7 +15,7 @@ This is a simple example of how to use a for loop and create a plot. The model s
 
 Note `%` used to write comments in Matlab
 
-```
+```matlab
 a=2.5; % Parameter values
 b=0.1;
 Tend=20;
@@ -33,7 +33,7 @@ ylabel('Population')
 
 ###2. Fisher model
 
-```
+```matlab
 function Fisher1D
 p=0;
 x=linspace(-25,25,51);
@@ -72,13 +72,13 @@ qr = 0;
 
 ###3. Simple linear regression
 
-```
+```matlab
 load carsmall
 x1 = Weight;
 x2 = Horsepower;    % Contains NaN data
 y = MPG;
 
-X = [ones(size(x1)) x1 x2 x1.*x2]; % Regression 
+X = [ones(size(x1)) x1 x2 x1.*x2]; % Regression
 b = regress(y,X);    % Removes NaN data
 
 scatter3(x1,x2,y,'filled')
@@ -96,7 +96,7 @@ view(50,10)
 
 ###4. Intepreting linear regression output
 
-```
+```matlab
 load carsmall % Load the data
 X = [Weight,Horsepower,Acceleration];
 
